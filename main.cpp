@@ -27,6 +27,8 @@ int mainmenuselection() {
     cout<<"5. Showcase not done tasks"<<"\n";
     cout<<"6. Clear your tasks"<<"\n";
     cout<<"7. Exit (thank you for using our ToDo list!)"<<"\n";
+
+    cout<<"------------------------------------------------------- "<<endl;
 cout<<"Type in your selection: ";
     cin>>userselection;
 
@@ -75,6 +77,7 @@ int main() {
     int select = 0;
 
     cout<<"Welcome to the ToDo list!"<<endl;
+    cout<<" ";
 
     while (select != 7) {
         select = mainmenuselection();
@@ -95,6 +98,7 @@ int main() {
                 cout<<"No tasks discovered!"<<endl;
             }else {
                 showcasealltasks(tasks.all(), "Entire tasks");
+                cout<<"--------------------------";
                 cout<<"Enter to do task ID: ";
 
                 int taskid = locatetaskid();
